@@ -70,9 +70,9 @@ API call | Status
 `/list_file_members/batch` | 🌑
 `/list_file_members/continue` | 🌑
 `/list_folder_members` | 🌕
-`/list_folder_members/continue` | 🌑
-`/list_folders` | 🌑
-`/list_folders/continue` | 🌑
+`/list_folder_members/continue` | 🌕
+`/list_folders` | 🌕
+`/list_folders/continue` | 🌕
 `/list_mountable_folders` | 🌑
 `/list_mountable_folders/continue` | 🌑
 `/list_received_files` | 🌑

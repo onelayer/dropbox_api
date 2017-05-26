@@ -25,6 +25,8 @@ module DropboxApi::Metadata
         object[".tag"].to_sym
       elsif @type == :boolean
         object.to_s == "true"
+      elsif @type == Hash
+        JSON.parse(object.to_s.gsub('=>', ':'))
       elsif @type.ancestors.include? DropboxApi::Metadata::Base
         @type.new(object)
       else

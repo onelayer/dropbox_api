@@ -14,12 +14,12 @@ module DropboxApi::Metadata
   #     "time_invited" => "2016-06-04T10:00:35Z"
   #   }
   class SharedFolder < Base
-    field :access_type, String
+    field :access_type, Hash
     field :is_team_folder, :boolean
     field :policy, DropboxApi::Metadata::SharedFolderPolicy
     field :path_lower, String
     field :name, String
-    field :shared_folder_id, Integer
+    field :shared_folder_id, String
     field :time_invited, Time
   end
 end
