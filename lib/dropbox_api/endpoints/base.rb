@@ -9,7 +9,7 @@ module DropboxApi::Endpoints
 
     def perform_request(params)
       begin
-        process_response(get_response(params), params)
+        process_response(get_response(params))
       rescue DropboxApi::Errors::TooManyRequestsError => error
         if defined? DROPBOX_RETRY_ON_429
           puts "Dropbox rate limit reached: retrying in #{error.retry_after}"
