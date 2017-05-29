@@ -17,7 +17,7 @@ module DropboxApi::Metadata
     field :access_type, Hash
     field :is_team_folder, :boolean
     field :policy, DropboxApi::Metadata::SharedFolderPolicy
-    field :path_lower, String
+    field :path_lower, String, :optional
     field :name, String
     field :shared_folder_id, String
     field :time_invited, Time
